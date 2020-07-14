@@ -5,6 +5,7 @@
     padding: 30px 30px;
     display: flex;
     justify-content: center;
+    margin: 0 100px;
 }
 
 h3 {
@@ -119,6 +120,8 @@ form {
 @media (max-width: 900px) {
     .my-content {
         flex-direction: column;
+        margin: 10px 20px;
+        padding: 10px 20px;
     }
 
     .my-content-copy {
@@ -138,6 +141,7 @@ form {
     .form-item textarea { 
         flex-basis: 100%;
     }
+
 }
 
 
