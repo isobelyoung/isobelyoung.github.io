@@ -51,20 +51,18 @@ footer p {
 }
 
 .footer-right {
-    display: flex; 
     flex-basis: 55%;
     justify-content: flex-end;
-    align-items: center;
+    text-align: right;
 }
 
 .footer-right img {
-    width: 10%;
-    margin: 10px;
+    width: 15%;
+    max-width: 70px;
+    margin: 5px 10px;
+
 }
 
-.footer-right img:hover {
-    cursor: pointer;
-}
 
 #byline {
     font-family: "ITC Grouch", serif;
@@ -137,6 +135,7 @@ nav a {
 
 nav a:hover {
     color: #FF6F61;
+    transition-duration: 0.4s;
 }
 
 /* IMAGE SLIDESHOW */
@@ -313,7 +312,14 @@ nav a:hover {
     background-color: #FF6F61;
     color: #f5f5f5;
     padding: 15px;
-    order:
+
+}
+
+#grid-text-navy {
+    background-color: #15294B;
+    color: #f5f5f5;
+    padding: 15px;
+
 }
 
 .grid-item img {
@@ -352,6 +358,7 @@ div.card a {
 
 div.card a:hover {
     color: #15294B;
+    transition-duration: 0.4s;
 }
 
 div.card-text {
@@ -461,6 +468,10 @@ div.card-text {
         order: 4;
     }
 
+    #grid-text-navy {
+        order: 4;
+    }
+
     #grid-img-3 {
         order: 5;
     }
@@ -481,6 +492,7 @@ div.card-text {
     .footer-right {
         justify-content: center;
         margin-top: 15px;
+        text-align: center;
     }
 
     .footer-left p {
