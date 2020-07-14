@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("//db.onlinewebfonts.com/c/537c29c4b78689a51f1c48cd802a503f?family=ITC+Grouch");
+
+.my-content {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: "ITC Grouch", serif;
+    font-size: 60px;
+    color: #FF6F61;
+    margin: 0;
+}
+
+
+.my-content p {
+    font-size: 16px;
+    letter-spacing: 0.1em; 
+    color: #15294B;
+}
+
+.my-content-image {
+    flex-basis: 40%;
+    
+}
+
+.my-content-copy  {
+    flex-basis: 59%;
+    text-align: left;
+    padding: 0 15px;
+    margin-top: 0;
+
+}
+
+.my-content img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 40% 50%;
+}
+
+
+.my-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6F61;
+    color: #F5F5F5;
+    border: 2px solid transparent;
+    font-family: "Raleway", Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+.my-button:hover {
+    background-color: transparent;
+    color: #FF6F61;
+    border: 2px solid #FF6F61;
+}
+
+form {
+    margin: 0px auto;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.form-item label {
+    flex-basis: 38%;
+    font-size: 16px;
+    padding-bottom: 0.5em;
+}
+
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 59%;
+    border: 2px solid #F9DFD6;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form-item textarea {
+    height: 10em;
+}
+
+#about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding-bottom: 45px;
+}
+
+.card h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#about-cards img  {
+    object-position: center;
+}
+
+@media (max-width: 900px) {
+    .my-content {
+        flex-direction: column;
+    }
+
+    .my-content-copy {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .form-item {
+        text-align: center;
+    }
+
+    .form-item input,
+    .form-item textarea { 
+        flex-basis: 100%;
+    }
+}
+
+

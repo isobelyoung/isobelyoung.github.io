@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset = "utf-8">
+        <meta name = "Isobel Codesign | Portfolio Home"> 
+        <meta name = "author" content = "Isobel @ SheCodes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Isobel Young | Codesigns</title>
+        
+        <link rel="stylesheet" href="Homepage-styles.css">
+        <link href="//db.onlinewebfonts.com/c/537c29c4b78689a51f1c48cd802a503f?family=ITC+Grouch" rel="stylesheet" type="text/css"/>
+ 
+        
+
+    </head>
+
+
+        <header>
+
+            <div class="header-logo">
+                <img src="Logos/Logo-coral.png" alt="Isobel Young Codesign logo coral">
+                <div>
+                    <h1>Code<span id="h1-part2">sign</span>
+                    </h1>
+                </div>
+            </div>
+
+            <nav>
+                    <a href ="Homepage.html">Home</a>
+                    <a href="Portfolio.html">Portfolio</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <body>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="Images/pink-computer-and-girl.jpg">
+                  <div class="slideshow-text">Who codes? Isobel Codes</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="Images/pink-ink.jpg">
+                  <div class="slideshow-text">A unique mix of marketing experience...</div>
+                </div>
+                
+                <div class="mySlides fade" id="slide-3">
+                  <img src="Images/pink-laptop-cover.jpg">
+                  <div class="slideshow-text">and tech education.</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+                
+            <br>
+                
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            <div class="textbox-navy">
+                <div class="textbox-navy-item" id="textbox-heading">
+                    <h3>WHY HI !</h3>
+                </div>
+                <div class="textbox-navy-item" id="navy-textbox-copy">
+                    <p>I'm so excited to meet you! <b>My name is Isobel and I'm a rookie developer, coder and designer from Brisbane, Australia.</b></p>
+                    <p>When not at my desk (and probably yelling at my computer), you can usually find me browsing things I can't afford
+                        on James Street or checking out Brisbane's newest coffee spot. I am passionate about everything 
+                        to do with fashion, design and strategic content, and believe there's nothing worse 
+                        than a misplaced semicolon - except maybe a Juicy Couture tracksuit. </p>
+                </div>
+            </div>
+                
+            <div id="content">
+                <div class="card">
+                    <img src="Images/magic-crop.png" alt="Pineapple">
+                    <div class="card-text">
+                        <!-- <h3>Harry Potter Fan</h3> -->
+                        <p>Coding and design and marketing, oh my! Get an insight into my world.</p>
+                        <a class="nav-item" href="Portfolio.html">View my Portfolio ></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/motto.jpg" alt="Decorated cupcakes.">
+                    <div class="card-text">
+                        <!-- <h3>Life motto</h3> -->
+                        <p>As Neiman Marcus once said, women who wear black lead colourful lives.</p>
+                        <a class="nav-item" href="About.html">Read About Me ></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/pink-office-chair.jpg" alt="Decorated cupcakes.">
+                    <div class="card-text">
+                        <!-- <h3>Heading 3</h3> -->
+                        <p>Flexible working means my office can be anywhere (but usually it's my kitchen bench).</p>
+                        <a class="nav-item" href="#">Get in touch ></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+
+                <div class="grid-item" id="grid-img-1">
+                    <img src="Images/pink-cocktail-2.png">
+                </div>
+                
+                <div class="grid-item" id="grid-text-pink">
+                    <p><b>So, why the martini glass?</b></p>
+                    <p>My logo is actually my two initials - IY - superimposed. It just happened to look 
+                        like a martini glass, which aligns nicely with my favourite cocktail: the Espresso Martini.</p>
+                </div>
+
+                <div class="grid-item" id="grid-text-coral">
+                    <p>Born in Sydney but raised in Brisbane, the River City is my home at the moment (but I still go for the Blues at Origin!).
+                        At the moment, my favourite restaurant is Le Cache à Vin in Spring Hill.
+                    </p>
+                </div>
+ 
+                <div class="grid-item" id="grid-img-2">
+                    <img src="Images/brisbane-city.jpg">
+                </div>
+
+                <div class="grid-item" id="grid-img-3">
+                    <img src="Images/computer-in-bed.jpg">
+                </div>
+                
+                <div class="grid-item" id="grid-text-pink-2">
+                    <p>Qualified with degrees in both Fine Arts and Computer Science, I have 
+                        an unusual mix of skills that means I'm just as comfortable at a gallery opening
+                        as I am at a startup weekend. I have over three years of work experience in marketing and PR, 
+                        giving me valuable soft skills ready for my future tech career!
+                    </p>
+                </div>
+
+            </div> 
+
+
+            <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+       
+        </body>
+
+        <footer>
+
+            <div class="footer-left">
+                <h4 id="byline">Code<span id="byline-part2">sign by Isobel</span></h4>
+                <p>Isobel Young is a rookie developer and designer based in Brisbane, Australia. 
+                    Her interests include Tim Tams and staring lovingly at her house plants.</p>
+            </div>
+
+            <a class="footer-right">
+                <img src="Logos/Logo-offwhite-01.png" onclick="window.location='http://www.everydayim.com/', '_blank'">
+                <img src="Logos/Instagram-icon.png" onclick="window.location='http://www.instagram.com/isobelyoung/', '_blank'">
+            </div>
+
+        </footer>
+
+</html>
+
+<!-- <div>Font made from <a href="http://www.onlinewebfonts.com"> online Web Fonts</a> is licensed by CC BY 3.0</div> -->
+

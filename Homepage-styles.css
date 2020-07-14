@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("//db.onlinewebfonts.com/c/537c29c4b78689a51f1c48cd802a503f?family=ITC+Grouch");
+
+
+
+html {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: #fff;
+
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    background-color: #F9DFD6;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+footer {
+    background-color: #15294B;
+    color: #F5F5F5;
+    padding: 15px 30px;  
+    display: flex; 
+}
+
+footer p {
+    color:  #F9DFD6;
+    margin: 0.5em 0 0 0;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+}
+
+.footer-left {
+    display: flex; 
+    flex-basis: 45%;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: left;
+    flex-direction: column; 
+    align-content: flex-start; 
+}
+
+.footer-right {
+    display: flex; 
+    flex-basis: 55%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right img {
+    width: 10%;
+    margin: 10px;
+}
+
+.footer-right img:hover {
+    cursor: pointer;
+}
+
+#byline {
+    font-family: "ITC Grouch", serif;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+}
+
+#byline-part2 {
+    font-family: "Raleway", Helvetica, sans-serif; 
+    font-size: 21px;
+    letter-spacing: 0.1em; 
+    padding-left: 0.1em;
+    text-transform: uppercase;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.header-logo img {
+    width: 20%;
+    margin-right: 10px;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 10px;
+
+}
+
+h1 {
+    font-family: "ITC Grouch", serif;
+    font-size: 80px;
+    color: #FF6F61;
+    margin-left: 10px;
+    text-align: left;
+    align-self: center;
+    line-height: 0.3;
+}
+
+#h1-part2 {
+    font-family: "Raleway", Helvetica, sans-serif; 
+    font-weight: 150; 
+    text-transform: uppercase; 
+    font-size: 56px; 
+    letter-spacing: 0.1em; 
+    padding-left: 0.1em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+nav a {
+    color: #15294B;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+nav a:hover {
+    color: #FF6F61;
+}
+
+/* IMAGE SLIDESHOW */
+.mySlides {
+    display: none;
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+.slideshow-container img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    max-height: 70vh;
+  }
+
+#slide-3 {
+    object-position: center;
+}  
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.slideshow-text {
+    color: #F5F5F5;
+    font-family: "Raleway", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 8px 8px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+.slideshow-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 5px 2px 20px;
+    padding: 5px;
+    background-color: #FF6F61;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #F9DFD6;
+
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover {
+    background-color: rgba(255, 111, 97, 0.8);
+  }
+
+/* TEXT BOX */
+.textbox-navy {
+    background-color: #15294B;
+    color: #F5F5F5;
+    padding: 45px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+}
+
+.textbox-navy-item {
+    padding: 15px;
+
+}
+
+#navy-textbox-copy {
+    flex-basis: 2;
+} 
+
+.textbox-navy h3 {
+    font-family: "ITC Grouch", serif;
+    font-size: 80px;
+    color: #FF6F61;
+    height: 100%;
+    margin: 0;
+
+
+}
+
+.textbox-navy p {
+    color: #F5F5F5;
+
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    background-color: transparent;
+  }
+  
+.grid-item {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center;
+}
+
+#grid-text-pink {
+    background-color: #F9DFD6;
+    color: #15294B;
+    padding: 15px;
+}
+
+#grid-text-pink-2 {
+    background-color: #F9DFD6;
+    color: #15294B;
+    padding: 15px;
+}
+
+#grid-text-coral {
+    background-color: #FF6F61;
+    color: #f5f5f5;
+    padding: 15px;
+    order:
+}
+
+.grid-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+/* FLEX CARDS */
+div.card {
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+
+}
+
+div.card img {
+    object-fit: cover;
+    height: 200px;
+    width: 48%;
+    object-position: bottom;
+}
+
+div.card a {
+    padding: 5px;
+    color: #FF6F61;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+div.card a:hover {
+    color: #15294B;
+}
+
+div.card-text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+    align-content: center;
+    color: #15294B;
+    justify-content: space-between;
+    text-align: center;
+    align-items: space-between;
+}
+
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #15294B;
+    padding-bottom: 45px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #h1-part2 {
+        font-size: 42px;
+    }
+
+    .textbox-navy {
+        padding: 75px;
+    }
+    
+
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .header-logo {
+        justify-content: center;
+    }
+
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slideshow-text {
+        font-size: 20px;
+    }
+
+    .textbox-navy {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 25px;
+    }
+
+    .textbox-navy-item {
+        padding-top: 0px;
+    }
+
+    .textbox-navy h3 {
+        font-size: 60px;
+    }
+
+    .textbox-navy p {
+        margin: 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+      }
+/* 
+    .grid-item {
+        font-size: 12px;
+    } */
+
+    #grid-img-1 {
+        order: 1;
+    }
+
+    #grid-text-pink {
+        order: 2;
+    }
+
+    #grid-img-2 {
+        order: 3;
+    }
+
+    #grid-text-coral {
+        order: 4;
+    }
+
+    #grid-img-3 {
+        order: 5;
+    }
+
+    #grid-text-pink-2 {
+        order: 6;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footer-left p {
+        margin: 5px 15%;
+    }
+}    
+
+@media (max-width: 500px) {
+    
+    h1 {
+        font-size: 40px;
+        line-height: 0.5;
+        
+    }
+
+    #h1-part2 {
+        font-size: 28px;
+    }
+
+    #h1-part3 {
+        font-size: 16px;
+        
+    }
+
+    .slideshow-text {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 600px) {  
+    div.card {
+        flex-basis: 43%;
+        flex-wrap: wrap;
+    }
+
+    div.card img {
+        flex-basis: 100%;
+    }
+
+    div.card-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+} 
+
+@media (min-width: 900px) {
+    div.card { 
+        flex-basis: 29%;
+    }
+} 
